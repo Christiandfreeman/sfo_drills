@@ -1,0 +1,3 @@
+SELECT COUNT(date_month), SUM(sum_price)
+from cal_price_2
+GROUP BY date_month;

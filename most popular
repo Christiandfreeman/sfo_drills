@@ -1,0 +1,5 @@
+SELECT calender_date, SUM(IF available ='f' then 1 else 0 end)
+FROM sfo_calendar
+WHERE available = 'f'
+GROUP BY 1
+;
